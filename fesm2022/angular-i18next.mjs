@@ -1,7 +1,6 @@
 import * as i0 from '@angular/core';
 import { InjectionToken, Injectable, Pipe, Inject, Optional, NgModule } from '@angular/core';
-import * as i18next from 'i18next';
-import i18next__default from 'i18next';
+import * as i18n from 'i18next';
 import { Subject, BehaviorSubject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { DOCUMENT } from '@angular/common';
@@ -273,7 +272,7 @@ class I18NextEvents {
     languageChanged = new BehaviorSubject(null);
 }
 
-const i18nextGlobal$1 = i18next__default;
+const i18nextGlobal$1 = i18n.default;
 class I18NextService {
     errorHandlingStrategy;
     i18next;
@@ -450,7 +449,7 @@ function resolver(activatedRouteSnapshot, routerStateSnapshot) {
 function i18nextNamespaceResolverFactory(i18next) {
     return resolver.bind(i18next);
 }
-const i18nextGlobal = i18next.default;
+const i18nextGlobal = i18n.default;
 class I18NextModule {
     static forRoot(params = {}) {
         return {
