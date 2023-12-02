@@ -10,11 +10,11 @@ export class I18NextFormatPipe {
         let opts = typeof options === 'string' ? { format: options } : options;
         return this.translateI18Next.format(value, opts.format, opts.lng);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextFormatPipe, deps: [{ token: I18NEXT_SERVICE }], target: i0.ɵɵFactoryTarget.Pipe });
-    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.3", ngImport: i0, type: I18NextFormatPipe, name: "i18nextFormat" });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextFormatPipe });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextFormatPipe, deps: [{ token: I18NEXT_SERVICE }], target: i0.ɵɵFactoryTarget.Pipe });
+    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.5", ngImport: i0, type: I18NextFormatPipe, name: "i18nextFormat" });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextFormatPipe });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextFormatPipe, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextFormatPipe, decorators: [{
             type: Injectable
         }, {
             type: Pipe,

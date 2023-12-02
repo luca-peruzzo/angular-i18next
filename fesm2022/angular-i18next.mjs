@@ -1,6 +1,7 @@
 import * as i0 from '@angular/core';
 import { InjectionToken, Injectable, Pipe, Inject, Optional, NgModule } from '@angular/core';
-import * as i18n from 'i18next';
+import * as i18next from 'i18next';
+import i18next__default from 'i18next';
 import { Subject, BehaviorSubject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { DOCUMENT } from '@angular/common';
@@ -95,11 +96,11 @@ class I18NextPipe {
             options.context = options.context.toString();
         return options;
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextPipe, deps: [{ token: I18NEXT_SERVICE }, { token: I18NEXT_NAMESPACE }, { token: I18NEXT_SCOPE }], target: i0.ɵɵFactoryTarget.Pipe });
-    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.3", ngImport: i0, type: I18NextPipe, name: "i18next" });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextPipe });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextPipe, deps: [{ token: I18NEXT_SERVICE }, { token: I18NEXT_NAMESPACE }, { token: I18NEXT_SCOPE }], target: i0.ɵɵFactoryTarget.Pipe });
+    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.5", ngImport: i0, type: I18NextPipe, name: "i18next" });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextPipe });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextPipe, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextPipe, decorators: [{
             type: Injectable
         }, {
             type: Pipe,
@@ -126,11 +127,11 @@ class I18NextCapPipe extends I18NextPipe {
         options.format = 'cap';
         return super.transform(key, options);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextCapPipe, deps: [{ token: I18NEXT_SERVICE }, { token: I18NEXT_NAMESPACE }, { token: I18NEXT_SCOPE }], target: i0.ɵɵFactoryTarget.Pipe });
-    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.3", ngImport: i0, type: I18NextCapPipe, name: "i18nextCap" });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextCapPipe });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextCapPipe, deps: [{ token: I18NEXT_SERVICE }, { token: I18NEXT_NAMESPACE }, { token: I18NEXT_SCOPE }], target: i0.ɵɵFactoryTarget.Pipe });
+    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.5", ngImport: i0, type: I18NextCapPipe, name: "i18nextCap" });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextCapPipe });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextCapPipe, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextCapPipe, decorators: [{
             type: Injectable
         }, {
             type: Pipe,
@@ -190,10 +191,10 @@ class I18NextEagerPipe extends I18NextPipe {
         this.ngUnsubscribe.next();
         this.ngUnsubscribe.complete();
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextEagerPipe, deps: [{ token: I18NEXT_SERVICE }, { token: I18NEXT_NAMESPACE }, { token: I18NEXT_SCOPE }, { token: i0.ChangeDetectorRef }, { token: i0.NgZone }], target: i0.ɵɵFactoryTarget.Pipe });
-    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.3", ngImport: i0, type: I18NextEagerPipe, name: "i18nextEager", pure: false });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextEagerPipe, deps: [{ token: I18NEXT_SERVICE }, { token: I18NEXT_NAMESPACE }, { token: I18NEXT_SCOPE }, { token: i0.ChangeDetectorRef }, { token: i0.NgZone }], target: i0.ɵɵFactoryTarget.Pipe });
+    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.5", ngImport: i0, type: I18NextEagerPipe, name: "i18nextEager", pure: false });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextEagerPipe, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextEagerPipe, decorators: [{
             type: Pipe,
             args: [{
                     name: 'i18nextEager',
@@ -246,11 +247,11 @@ class I18NextFormatPipe {
         let opts = typeof options === 'string' ? { format: options } : options;
         return this.translateI18Next.format(value, opts.format, opts.lng);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextFormatPipe, deps: [{ token: I18NEXT_SERVICE }], target: i0.ɵɵFactoryTarget.Pipe });
-    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.3", ngImport: i0, type: I18NextFormatPipe, name: "i18nextFormat" });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextFormatPipe });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextFormatPipe, deps: [{ token: I18NEXT_SERVICE }], target: i0.ɵɵFactoryTarget.Pipe });
+    static ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "17.0.5", ngImport: i0, type: I18NextFormatPipe, name: "i18nextFormat" });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextFormatPipe });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextFormatPipe, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextFormatPipe, decorators: [{
             type: Injectable
         }, {
             type: Pipe,
@@ -272,7 +273,7 @@ class I18NextEvents {
     languageChanged = new BehaviorSubject(null);
 }
 
-const i18nextGlobal$1 = i18n.default;
+const i18nextGlobal$1 = i18next__default;
 class I18NextService {
     errorHandlingStrategy;
     i18next;
@@ -400,10 +401,10 @@ class I18NextService {
         this.i18next.on.call(this.i18next, 'added', (lng, ns) => this.events.added.next({ lng, ns }));
         this.i18next.on.call(this.i18next, 'removed', (lng, ns) => this.events.removed.next({ lng, ns }));
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextService, deps: [{ token: I18NEXT_ERROR_HANDLING_STRATEGY }, { token: I18NEXT_INSTANCE, optional: true }], target: i0.ɵɵFactoryTarget.Injectable });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextService });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextService, deps: [{ token: I18NEXT_ERROR_HANDLING_STRATEGY }, { token: I18NEXT_INSTANCE, optional: true }], target: i0.ɵɵFactoryTarget.Injectable });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextService });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextService, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextService, decorators: [{
             type: Injectable
         }], ctorParameters: () => [{ type: undefined, decorators: [{
                     type: Inject,
@@ -427,10 +428,10 @@ class I18NextTitle extends Title {
     translate(text) {
         return this.i18nextPipe.transform(text, { format: 'cap' });
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextTitle, deps: [{ token: I18NextPipe }, { token: DOCUMENT }], target: i0.ɵɵFactoryTarget.Injectable });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextTitle });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextTitle, deps: [{ token: I18NextPipe }, { token: DOCUMENT }], target: i0.ɵɵFactoryTarget.Injectable });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextTitle });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextTitle, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextTitle, decorators: [{
             type: Injectable
         }], ctorParameters: () => [{ type: I18NextPipe }, { type: undefined, decorators: [{
                     type: Inject,
@@ -449,7 +450,7 @@ function resolver(activatedRouteSnapshot, routerStateSnapshot) {
 function i18nextNamespaceResolverFactory(i18next) {
     return resolver.bind(i18next);
 }
-const i18nextGlobal = i18n.default;
+const i18nextGlobal = i18next.default;
 class I18NextModule {
     static forRoot(params = {}) {
         return {
@@ -492,12 +493,12 @@ class I18NextModule {
         }
         return formatDelegate;
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-    static ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "17.0.3", ngImport: i0, type: I18NextModule, declarations: [I18NextPipe,
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+    static ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "17.0.5", ngImport: i0, type: I18NextModule, declarations: [I18NextPipe,
             I18NextCapPipe,
             I18NextFormatPipe,
             I18NextEagerPipe], exports: [I18NextPipe, I18NextCapPipe, I18NextFormatPipe, I18NextEagerPipe] });
-    static ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextModule, providers: [
+    static ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextModule, providers: [
             {
                 provide: I18NEXT_NAMESPACE,
                 useValue: '',
@@ -513,7 +514,7 @@ class I18NextModule {
             I18NextEagerPipe,
         ] });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextModule, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextModule, decorators: [{
             type: NgModule,
             args: [{
                     providers: [

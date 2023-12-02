@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/Romanchuk/angular-i18next.git"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "license": "MIT",
   "description": "i18next module for Angular",
   "keywords": [
@@ -35,9 +38,9 @@
     "tslib": "^2.2.0"
   },
   "peerDependencies": {
-    "@angular/common": ">=17.0.0 < 18.0.0",
-    "@angular/core": ">=17.0.0 < 18.0.0",
-    "@angular/platform-browser": ">=17.0.0 < 18.0.0",
+    "@angular/common": ">=17.0.0 <18.0.0",
+    "@angular/core": ">=17.0.0 <18.0.0",
+    "@angular/platform-browser": ">=17.0.0 <18.0.0",
     "i18next": ">=23.0.0 <24.0.0",
     "rxjs": ">=6.6.0 <8.0.0"
   },

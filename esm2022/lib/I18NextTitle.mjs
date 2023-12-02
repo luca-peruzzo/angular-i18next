@@ -15,10 +15,10 @@ export class I18NextTitle extends Title {
     translate(text) {
         return this.i18nextPipe.transform(text, { format: 'cap' });
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextTitle, deps: [{ token: i1.I18NextPipe }, { token: DOCUMENT }], target: i0.ɵɵFactoryTarget.Injectable });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextTitle });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextTitle, deps: [{ token: i1.I18NextPipe }, { token: DOCUMENT }], target: i0.ɵɵFactoryTarget.Injectable });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextTitle });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextTitle, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextTitle, decorators: [{
             type: Injectable
         }], ctorParameters: () => [{ type: i1.I18NextPipe }, { type: undefined, decorators: [{
                     type: Inject,

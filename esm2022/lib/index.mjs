@@ -79,12 +79,12 @@ export class I18NextModule {
         }
         return formatDelegate;
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-    static ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "17.0.3", ngImport: i0, type: I18NextModule, declarations: [I18NextPipe,
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+    static ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "17.0.5", ngImport: i0, type: I18NextModule, declarations: [I18NextPipe,
             I18NextCapPipe,
             I18NextFormatPipe,
             I18NextEagerPipe], exports: [I18NextPipe, I18NextCapPipe, I18NextFormatPipe, I18NextEagerPipe] });
-    static ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextModule, providers: [
+    static ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextModule, providers: [
             {
                 provide: I18NEXT_NAMESPACE,
                 useValue: '',
@@ -100,7 +100,7 @@ export class I18NextModule {
             I18NextEagerPipe,
         ] });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.3", ngImport: i0, type: I18NextModule, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: I18NextModule, decorators: [{
             type: NgModule,
             args: [{
                     providers: [

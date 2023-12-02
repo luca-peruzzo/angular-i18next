@@ -1,4 +1,5 @@
-import * as i18n from 'i18next';
+import { TOptionsBase } from 'i18next';
+import { $Dictionary as I18Next$Dictionary } from 'i18next/typescript/helpers';
 export type FormatPipeOptions = {
     format?: string;
     lng?: string;
@@ -9,6 +10,6 @@ export type PrependPipeOptions = {
     prependScope?: boolean;
     prependNamespace?: boolean;
 };
-export type PipeOptions = i18n.TOptions & {
+export type PipeOptions = TOptionsBase & I18Next$Dictionary & {
     defaultValue?: string;
 } & FormatPipeOptions & PrependPipeOptions;
